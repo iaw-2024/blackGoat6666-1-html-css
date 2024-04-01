@@ -12,7 +12,7 @@
     height: 60px; /* Mantiene la proporción original de la imagen */
 }
 
-.article-container {
+.item-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     
 }
 
-.article-image {
+.item-image {
     margin: 10px;
     width: auto; /* Establece el ancho */
     height: 200px; /* Mantiene la proporción original de la imagen */

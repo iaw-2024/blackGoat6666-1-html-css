@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML+CSS</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -10,7 +11,7 @@
   <body>
 
     <header class="header">
-      <article class="header-container">
+      <div class="header-container">
         <div>
             <p>Listados</p>
         </div>
@@ -24,69 +25,79 @@
         <div>
             <img class="header-image" src="https://i.pinimg.com/564x/25/86/27/25862772900375df6e576a55d400b30e.jpg" alt="Logo">
         </div>
-      </article>
+      </div>
     </header>
 
 
     <main class="content">
 
         <section>
-            <p class="titulo">Mounstrous marinos</p>
+            <p class="titulo">Mounstrous</p>
             <ul>
               <li>
-                <article class="article-container">
+                <div class="item-container">
                   <div class="left-column">
-                      <h1>Leviatán</h1>
-                      <p>Es una criatura concebida por Dios en la Creación. La imagen del Leviatán ha sido tan extendida en la cultura occidental que su nombre se ha llegado a emplear como término genérico para designar a cualquier monstruo marino.</p>
+                      <h1>Enrique</h1>
+                      <p>Es una criatura concebida por Dios en la Creación.</p>
+                      <h4>Color: Azul</h4>
+                      <h5>Garras</h5>
                   </div>
                   <div class="right-column">
-                      <img class="article-image" src="https://png.pngtree.com/thumb_back/fw800/background/20230612/pngtree-white-drawing-of-a-large-dragon-on-the-water-image_2890131.jpg" alt="leviatan">
+                      <img class="item-image" src="https://png.pngtree.com/thumb_back/fw800/background/20230612/pngtree-white-drawing-of-a-large-dragon-on-the-water-image_2890131.jpg" alt="leviatan">
                   </div>
-                </article>
+                </div>
               </li>
               <li>
-                <article class="article-container">
+                <div class="item-container">
                   <div class="left-column">
-                      <h1>Cthulhu</h1>
-                      <p>"Un monstruo de contornos vagamente antropoides, pero con una cabeza de pulpo cuyo rostro era una masa de tentáculos, un cuerpo escamoso que sugería cierta elasticidad, cuatro extremidades dotadas de garras enormes, y un par de alas largas y estrechas en la espalda".</p>
+                      <h1>TUlu</h1>
+                      <p>"Un monstruo de contornos vagamente antropoides, pero con una cabeza redonda un cuerpo escamoso, cuatro extremidades dotadas de garras enormes".</p>
+                      <h4>Color: Verde</h4>
+                      <h5>Garras, Dientes</h5>
                   </div>
                   <div class="right-column">
-                      <img class="article-image" src="data:image/jpeg;base64,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" alt="Texto alternativo de la imagen">
+                      <img class="item-image" src="https://cdn.thecollector.com/wp-content/uploads/2023/04/hp-lovecraft-cthulhu-mythos.jpg?width=1400&quality=55" alt="Cthulu">
                   </div>
-                </article>
+                </div>
               </li>
               <li>
-                <article class="article-container">
+                <div class="item-container">
                   <div class="left-column">
-                      <h1>Escila y Caribdis</h1>
-                      <p>Caribdis es hija de la diosa Gea y el dios Poseidón (tierra y agua) y tres veces al día absorbía grandes cantidades de agua, de modo que formaba enormes remolinos que tragaban todo lo que se encontraba cerca.Por el otro lado, Escila era hija del dios marino Forcis y del monstruo marino Ceto (de la que procede la palabra “cetáceo”). Escila tiene cuerpo de mujer, cola de pez y, según las distintas narraciones, de su cintura salían seis perros o tenía seis cabezas al final de largos cuellos. </p>
+                      <h1>Eschila</h1>
+                      <p>Escila era hija del dios marino Forcis y del monstruo marino Ceto (de la que procede la palabra “cetáceo”).  </p>
+                      <h4>Color: Rojo</h4>
+                      <h5>Garras, Dientes</h5>
                   </div>
                   <div class="right-column">
-                      <img class="article-image" src="https://i.pinimg.com/originals/45/5a/96/455a967625db939b8426b256e5b57afa.jpg" alt="Texto alternativo de la imagen">
+                      <img class="item-image" src="https://i.pinimg.com/originals/45/5a/96/455a967625db939b8426b256e5b57afa.jpg" alt="Escila">
                   </div>
-                </article>
+                </div>
               </li>
               <li>
-                <article class="article-container">
+                <div class="item-container">
                   <div class="left-column">
                       <h1>Ryūjin</h1>
-                      <p>Esta criatura es un dragón que en la mitología japonesa representa el poder del mar. Es la divinidad protectora del océano y comúnmente se la describe como un ser con enormes fauces. Este dios vivía en un palacio submarino y desde su residencia manejaba el movimiento del mar y las olas.</p>
+                      <p>Esta criatura es un dragón que en la mitología japonesa representa el poder del mar. </p>
+                      <h4>Color: Amarillo</h4>
+                      <h5>Garras, Dientes, Veneno</h5>
                   </div>
                   <div class="right-column">
-                      <img class="article-image" src="https://asiamitica.com/wp-content/uploads/2024/01/ryujin1.jpg" alt="Texto alternativo de la imagen">
+                      <img class="item-image" src="https://asiamitica.com/wp-content/uploads/2024/01/ryujin1.jpg" alt="Ryujin">
                   </div>
-                </article>
+                </div>
               </li>
               <li>
-                <article class="article-container">
+                <div class="item-container">
                   <div class="left-column">
-                      <h1>Hidra de Lerna</h1>
-                      <p>La Hidra de Lerna era un monstruo lacustre conocida por su fiereza y crueldad. Era hija del dios Tifón (relacionado con los huracanes) y de Equidna, una monstruosa ninfa con cuerpo de serpiente y la parte superior de mujer. Su cubil se encontraba en el lago de Lerna.</p>
+                      <h1>Lerni</h1>
+                      <p> Hija del dios Tifón (relacionado con los huracanes) y de Equidna, una monstruosa ninfa con cuerpo de serpiente y la parte superior de mujer. </p>
+                      <h4>Color: Verde</h4>
+                      <h5>Garras, Veneno</h5>
                   </div>
                   <div class="right-column">
-                      <img class="article-image" src="https://academiaplay.net/wp-content/uploads/2018/06/web-Hydra1.jpg" alt="Texto alternativo de la imagen">
+                      <img class="item-image" src="https://academiaplay.net/wp-content/uploads/2018/06/web-Hydra1.jpg" alt="hidra">
                   </div>
-                </article>
+                </div>
               </li>
             </ul>
             
