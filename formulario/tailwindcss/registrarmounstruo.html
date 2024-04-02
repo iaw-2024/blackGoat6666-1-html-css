@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-section {
+          background-image: url('https://i.pinimg.com/564x/67/5d/d5/675dd5de17aa82b8b2ea5e33137677e8.jpg');
+        }
+        .bg-item {
+          background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/006/757/small/texture-of-white-crumpled-paper-illustration-vector.jpg');
+        }
+      </style>
+  </head>
+
+  <body>
+
+    <header class="container mx-auto h-16">
+      <div class="flex justify-between items-center ">
+        <div>
+            <p>Listados</p>
+        </div>
+        <div>
+          <p>Formularios</p>
+        </div>
+        <br>
+        <div>
+            <h1 class="text-base md:text-4xl font-bold">Mounstrous . com</h1>
+        </div>
+        <div>
+            <img class="h-16" src="https://i.pinimg.com/564x/25/86/27/25862772900375df6e576a55d400b30e.jpg" alt="Logo">
+        </div>
+      </div>
+    </header>
+
+
+    <main class="container-fluid flex mx-auto justify-center bg-section">
+        <section class="container-fluid w-3/4">
+            <h1 class="text-6xl text-center text-white bg-black">Registro mounstroso</h1>
+            <form class="bg-item">
+              <div class="flex m-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="" for="nombre">
+                    <h4 class="text-base md:text-3xl font-bold text-center m-auto">Nombre:</h4>
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" type="text" placeholder="Nombre">
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label class="" for="descripcion">
+                    <h4 class="text-base md:text-3xl font-bold text-center m-auto">Descripcion:</h4>
+                  </label>
+                  <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" placeholder="Descripcion"></textarea>
+                </div>
+              </div>
+              <div class="flex m-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 m-10">
+                  <label class="" for="color">
+                    <h4 class="text-base md:text-3xl font-bold text-center m-auto">Color:</h4>
+                  </label>
+                  <div class="flex flex-col text-center">
+                    <div class="column">
+                      <input type="radio" id="rojo" name="color" value="rojo" class="form-radio text-red-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="rojo" class="text-black">Rojo</label>
+                    </div>
+                    <div class="column">
+                      <input type="radio" id="verde" name="color" value="verde" class="form-radio text-green-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="verde" class="text-black">Verde</label>
+                    </div>
+                    <div class="column">
+                      <input type="radio" id="azul" name="color" value="azul" class="form-radio text-blue-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="azul" class="text-black">Azul</label>
+                    </div>
+                    <div class="column">
+                      <input type="radio" id="negro" name="color" value="negro" class="form-radio text-blue-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="negro" class="text-black">Negro</label>
+                    </div>
+                    <div class="column">
+                      <input type="radio" id="amarillo" name="color" value="amarillo" class="form-radio text-blue-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="amarillo" class="text-black">Amarillo</label>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label class="" for="caracteristicas">
+                    <h4 class="text-base md:text-3xl font-bold text-center m-auto">Caracteristicas:</h4>
+                  </label>
+                  <div class="flex flex-col text-center">
+                    <div class="column">
+                      <input type="checkbox" id="garras" name="caracteristicas" value="garras" class="form-radio text-red-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="garras" class="text-black">Garras</label>
+                    </div>
+                    <div class="column">
+                      <input type="checkbox" id="dientes" name="caracteristicas" value="dientes" class="form-radio text-green-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="dientes" class="text-black">Dientes</label>
+                    </div>
+                    <div class="column">
+                      <input type="checkbox" id="veneno" name="caracteristicas" value="veneno" class="form-radio text-blue-500">
+                      <label class="text-base md:text-2xl text-center m-auto" for="veneno" class="text-black">Veneno</label>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="flex m-4">
+                <div class="w-full md:w-1/2 px-3 m-10">
+                  <label class="" for="imagen">
+                    <h4 class="text-base md:text-3xl font-bold text-center m-auto">Imagen:</h4>
+                  </label>
+                  <input type="file" name="imagen" id="imagen" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">                </div>
+                <div class="w-full md:w-1/2 px-3 m-10 text-center">
+                  <button class="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    Submit
+                  </button>
+                </div>
+              </div>
+              
+                
+              </div>
+            </form>
+            
+        </section>
+        
+    </main>
+
+
+    <footer class="footer">
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+  </body>
+</html>
