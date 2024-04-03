@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML+CSS</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <article class="header-container">
+        <button type="button" class="button">
+          <a href="../../index.html">
+            <h3>Volver a Inicio</h3>
+          </a>
+        </button>
+        <div>
+            <h1>Mounstrous . com</h1>
+        </div>
+        <div>
+            <img class="header-image" src="https://i.pinimg.com/564x/25/86/27/25862772900375df6e576a55d400b30e.jpg" alt="Logo">
+        </div>
+      </article>
+    </header>
+
+
+    <main class="content">
+
+        <section>
+            <p class="titulo">Registro mounstroso</p>
+            <form class="form-container">
+                <div class="column">
+                    <h4 for="name">Nombre:</h4>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="column">
+                    <h4 for="descripcion">Descripcion:</h4>
+                    <textarea id="descripcion" name="descripcion"></textarea>
+                </div>
+                <div class="column">
+                    <h4>Color</h4>
+                    <input type="radio" id="rojo" name="color" value="rojo">
+                    <label for="rojo">Rojo</label><br>
+                    <input type="radio" id="verde" name="color" value="verde">
+                    <label for="verde">Verde</label><br>
+                    <input type="radio" id="azul" name="color" value="azul">
+                    <label for="azul">Azul</label><br>
+                    <input type="radio" id="negro" name="color" value="negro">
+                    <label for="negro">Negro</label><br>
+                    <input type="radio" id="amarillo" name="color" value="amarillo">
+                    <label for="amarillo">Amarillo</label><br>
+                </div>
+                <div class="column">
+                    <h4>Caracteristicas</h4>
+                    <input type="checkbox" id="id1" name="id1" value="garras">
+                    <label for="id1">Garras</label><br>
+                    <input type="checkbox" id="id2" name="id2" value="dientes">
+                    <label for="id2">Dientes</label><br>
+                    <input type="checkbox" id="id3" name="id3" value="veneno">
+                    <label for="id3">Veneno</label>
+                </div>
+                <div>
+                  <h4>Imagen</h4><br>
+                  <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+                </div>
+                <div class="column">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            
+        </section>
+        
+    </main>
+
+
+    <footer class="footer">
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+  </body>
+</html>

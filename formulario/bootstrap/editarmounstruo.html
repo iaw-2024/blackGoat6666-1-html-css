@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+
+
+  <body>
+
+
+    <navbar class="navbar justify-content-around">
+      <a href="../../index.html" class="btn btn-primary btn-lg">Volver</a>
+        <div>
+            <h1>Mounstrous . com</h1>
+        </div>
+        <div>
+            <img class="header-image" src="https://i.pinimg.com/564x/25/86/27/25862772900375df6e576a55d400b30e.jpg" alt="Logo">
+        </div>
+    </navbar>
+
+
+
+
+    <main class="content">
+
+
+        <section class="container">
+            <h1 class="bg-dark text-white p-3">Edicion mounstruosa</h1>
+            <div class="form-container">
+              <form>
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="form-group my-2 mx-2 ml-6">
+                      <h4 class="text-black" for="name">Nombre:</h4>
+                      <input type="text"  class="form-control" id="name" name="name" value="Enrique">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group m-2">
+                      <h4 class="text-black" for="descripcion">Descripcion:</h4>
+                      <textarea class="form-control" id="descripcion" name="descripcion" rows="3">Es una criatura concebida por Dios en la Creación.</textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group m-2">
+                      <legend class="text-black col-form-label col-sm-2 pt-0"><h4>Color:</h4></legend>
+                      <div class="col-md-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="rojo" value="rojo">
+                          <label class="form-check-label text-black" for="rojo">
+                            Rojo
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="verde" id="verde" value="verde">
+                          <label class="form-check-label text-black" for="verde">
+                            Verde
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="azul" value="azul" checked>
+                          <label class="form-check-label text-black" for="azul">
+                            Azul
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="negro" value="negro">
+                          <label class="form-check-label text-black" for="negro">
+                            Negro
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="amarillo" id="amarillo" value="amarillo">
+                          <label class="form-check-label text-black" for="amarillo">
+                            Amarillo
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group m-2">
+                      <legend class="text-black col-form-label col-sm-2 pt-0"><h4>Caracteristicas:</h4></legend>
+                      <div class="col-md-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="garras" checked>
+                          <label class="form-check-label text-black" for="garras">
+                            Garras
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="dientes">
+                          <label class="form-check-label text-black" for="dientes">
+                            Dientes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="veneno">
+                          <label class="form-check-label text-black" for="veneno">
+                            Veneno
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group m-2">
+                      <label for="imagen"><h4 class="text-black">Imagen:</h4></label>
+                      <input type="file" class="form-control-file" id="imagen" value="https://png.pngtree.com/thumb_back/fw800/background/20230612/pngtree-white-drawing-of-a-large-dragon-on-the-water-image_2890131.jpg">
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary m-4">Enviar</button>
+              </form>
+            </div>
+            
+           
+        </section>
+       
+    </main>
+
+
+
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+  </body>
+</html>
+
